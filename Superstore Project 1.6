@@ -1,0 +1,14 @@
+-- order items by price
+SELECT item_name
+FROM superstore
+ORDER BY price;
+-- show a statistic about the item prices
+SELECT SUM(price) item_name
+FROM  superstore;
+-- show a statistic about the price for items in the category of 'Kitchen Supplies'
+SELECT MAX(price)
+FROM superstore
+WHERE category = 'Kitchen Supplies';
+-- what is Superstore's average rating?
+SELECT AVG(average_rating)
+FROM superstore;
